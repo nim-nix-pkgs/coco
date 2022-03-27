@@ -11,6 +11,7 @@
   inputs.src-coco-master.ref   = "refs/heads/master";
   inputs.src-coco-master.owner = "samuelroy";
   inputs.src-coco-master.repo  = "coco";
+  inputs.src-coco-master.dir   = "";
   inputs.src-coco-master.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
