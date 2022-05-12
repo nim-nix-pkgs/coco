@@ -8,8 +8,55 @@
   "web": "https://github.com/samuelroy/coco",
   "doc": "https://samuelroy.github.io/coco/",
   "refs": [
-    "fatal: unable to access 'https://github.com/samuelroy/coco/': Failed to connect to github.com port 443 after 130277 ms: Network is unreachable",
+    "refs/heads/master",
     ""
   ],
-  "heads": []
+  "heads": [
+    {
+      "name": "coco",
+      "version": "0.0.3",
+      "author": "Samuel Roy",
+      "desc": "Code coverage with line and branch support for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "coco.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "glob",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "coco"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master"
+    }
+  ]
 }
