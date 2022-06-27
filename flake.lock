@@ -3,9 +3,11 @@
     "cligen": {
       "inputs": {
         "flakeNimbleLib": [
+          "coco-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "coco-master",
           "nixpkgs"
         ],
         "src-cligen-v1_5_24": "src-cligen-v1_5_24"
@@ -24,6 +26,35 @@
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "coco-master": {
+      "inputs": {
+        "cligen": "cligen",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "glob": "glob",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-coco-master": "src-coco-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1656283615,
+        "narHash": "sha256-5DDmuP6/dCEIJKsIBkR6RA6kbuKnv5X96OVcgb4x0Ts=",
+        "owner": "nim-nix-pkgs",
+        "repo": "coco",
+        "rev": "361b6f32103168c7c4e7fe7155e9e123e8334107",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "coco",
         "type": "github"
       }
     },
@@ -51,9 +82,11 @@
     "glob": {
       "inputs": {
         "flakeNimbleLib": [
+          "coco-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "coco-master",
           "nixpkgs"
         ],
         "regex": "regex",
@@ -61,11 +94,11 @@
       },
       "locked": {
         "dir": "v0_11_1",
-        "lastModified": 1656302647,
-        "narHash": "sha256-OUqG29+iRAY9Qq/aihybb77h/1Gc4ohitT+RHq3rQvM=",
+        "lastModified": 1650757757,
+        "narHash": "sha256-ITRnMEzBCt1u8bFGD1TfAigd7yvSG5eeIwsoe+o/aTg=",
         "owner": "nim-nix-pkgs",
         "repo": "glob",
-        "rev": "cdbbd5644819532e6a87bb12a1d02fb160e3eee4",
+        "rev": "1582ac7befb3523662a56bca2530764d83112ecd",
         "type": "github"
       },
       "original": {
@@ -91,10 +124,12 @@
     "regex": {
       "inputs": {
         "flakeNimbleLib": [
+          "coco-master",
           "glob",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "coco-master",
           "glob",
           "nixpkgs"
         ],
@@ -120,11 +155,9 @@
     },
     "root": {
       "inputs": {
-        "cligen": "cligen",
+        "coco-master": "coco-master",
         "flakeNimbleLib": "flakeNimbleLib",
-        "glob": "glob",
-        "nixpkgs": "nixpkgs",
-        "src-coco-master": "src-coco-master"
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-cligen-v1_5_24": {
@@ -215,11 +248,13 @@
     "unicodedb": {
       "inputs": {
         "flakeNimbleLib": [
+          "coco-master",
           "glob",
           "regex",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "coco-master",
           "glob",
           "regex",
           "nixpkgs"
